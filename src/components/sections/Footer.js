@@ -52,7 +52,8 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <h2>Hummingbird</h2>
+              <br/>
               <span>
                 Illustrations by
                 {` `}
@@ -60,12 +61,16 @@ const Footer = () => (
                   @diana_valeanu
                 </ExternalLink>
               </span>
+              <br/>
+              <br/>
+              <span>
+                Project by Tolu Olubode
+                {` `}
+                <ExternalLink href="https://twitter.com/txluu">
+                  @txluu
+                </ExternalLink>
+              </span>
             </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink href={link}>{icon()}</ExternalLink>
-              ))}
-            </SocialIcons>
           </StyledContainer>
         </FooterWrapper>
       </React.Fragment>

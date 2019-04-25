@@ -7,7 +7,7 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'What is Hummingbird?',
     content: () => (
       <>
         Enjoy the power of the latest web technologies – React.js , Webpack ,
@@ -17,7 +17,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'How does it work?',
     content: () => (
       <>
         Gatsby’s rich data plugin ecosystem lets you build sites with the data
@@ -28,7 +28,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'Why is it better?',
     content: () => (
       <>
         Gatsby.js is Internet Scale. Forget complicated deploys with databases
@@ -39,7 +39,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'How much does it cost?',
     content: () => (
       <>
         Do not build a website with last decade’s tech. The future of the web is
@@ -51,7 +51,7 @@ const FAQS = [
     ),
   },
   {
-    title: 'What exactly does Gatsby build?',
+    title: 'What homes can you style?',
     content: () => (
       <>
         Gatsby.js is a static PWA (Progressive Web App) generator. You get code

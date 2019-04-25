@@ -48,9 +48,9 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Find home decor items. No stress.</h2>
+              <h2>Tell us about your decor goals</h2>
               <p>
-              Fill out a decor profile. Share your home style, tastes and price preferences with your personal decorator
+              Fill out a decor profile. Share your home style, tastes and price preferences with your personal decorator.
               </p>
             </div>
             <Art>
@@ -62,23 +62,20 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Get hand-selected pieces</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                Choose from 3-5 hand-selected home decor pieces in each category. Get up 2 revisions. We get you to exactly what you'll like. 
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Ship it!</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                Get links to the items you want. Buy exactly what you want.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                Hummingbird is fast in every way that matters.
               </p>
             </div>
             <Art>
