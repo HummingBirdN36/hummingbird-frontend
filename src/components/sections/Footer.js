@@ -10,6 +10,10 @@ import { ReactComponent as GithubIcon } from '@static/icons/github.svg';
 import { ReactComponent as InstagramIcon } from '@static/icons/instagram.svg';
 import { ReactComponent as TwitterIcon } from '@static/icons/twitter.svg';
 
+const footerText = {
+  fontSize: '15px'
+}
+
 const SOCIAL = [
   {
     icon: GithubIcon,
@@ -54,7 +58,7 @@ const Footer = () => (
             <Copyright>
               <h2>Hummingbird</h2>
               <br/>
-              <span>
+              <span style= {footerText}>
                 Illustrations by
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
@@ -62,8 +66,7 @@ const Footer = () => (
                 </ExternalLink>
               </span>
               <br/>
-              <br/>
-              <span>
+              <span style= {footerText}>
                 Project by Tolu Olubode
                 {` `}
                 <ExternalLink href="https://twitter.com/txluu">

@@ -16,7 +16,7 @@ import { ReactComponent as AnthropologieLogo } from '@static/logos/anthropologie
 const LOGOS = [
   {
     logo: CrateBarrelLogo,
-    link: 'https://www.bouclair.com/en/',
+    link: 'https://www.crateandbarrel.com/',
   },
   {
     logo: PotteryBarnLogo,
@@ -28,15 +28,15 @@ const LOGOS = [
   },
   {
     logo: BouclairLogo,
-    link: 'https://www.homesense.ca/en',
+    link: 'https://www.bouclair.com/en/',
   },
   {
     logo: UrbanBarnLogo,
-    link: 'https://www.homesense.ca/en',
+    link: 'https://www.urbanbarn.com/',
   },
   {
     logo: AnthropologieLogo,
-    link: 'https://www.homesense.ca/en',
+    link: 'https://www.anthropologie.com/new-home',
   },
  
 ];

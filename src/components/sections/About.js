@@ -72,7 +72,7 @@ const About = () => (
             <div>
               <h2>Ship it!</h2>
               <p>
-                Get links to the items you want. Buy exactly what you want.
+                Get links to the items you want. Buy and ship them to your home.
                 <br />
                 <br />
                 Hummingbird is fast in every way that matters.
