@@ -49,7 +49,7 @@ const About = () => (
         <h1>How does it work?</h1>
           <Grid>
             <div>
-              <h2>Tell us about your decor goals</h2>
+              <h3>Tell us about your decor goals</h3>
               <p>
               Fill out a decor profile. Share your home style, tastes and price preferences with your personal decorator.
               </p>
@@ -63,7 +63,7 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Get hand-selected pieces</h2>
+              <h3>Get hand-selected pieces</h3>
               <p>
                 Choose from 3-5 hand-selected home decor pieces in each category. Get up 2 revisions. We get you to exactly what you'll like. 
               </p>
@@ -71,18 +71,16 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>Ship it!</h2>
+              <h3>Ship it!</h3>
               <p>
                 Get links to the items you want. Buy and ship them to your home.
-                <br />
-                <br />
-                Hummingbird is fast in every way that matters.
               </p>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
           </Grid>
+          <h2>Hummingbird is fast in every way that matters.</h2>
         </Container>
       </Section>
     )}
@@ -107,6 +105,10 @@ const Grid = styled.div`
 
   h2 {
     margin-bottom: 16px;
+  }
+
+  h3 {
+    margin-bottom: 13px;
   }
 
   @media (max-width: ${props => props.theme.screen.md}) {
