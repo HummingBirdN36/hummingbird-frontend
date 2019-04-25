@@ -48,12 +48,9 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Find home decor items. No stress.</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+              Fill out a decor profile. Share your home style, tastes and price preferences with your personal decorator
               </p>
             </div>
             <Art>
