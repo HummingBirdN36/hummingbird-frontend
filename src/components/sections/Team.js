@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
+import ExternalLink from '@common/ExternalLink';
+
 import { Section, Container } from '@components/global';
 
 const TEAM = [
@@ -75,10 +77,18 @@ const Team = () => (
           <br/>
           <p>Yup! You read that right.</p>
           <br/>
-          <p>If you love your selections, you can give us some or all of the $10.</p>
+          <p>If you love your selections, you can give us some, all or nothing. <br/> what we value most is your feedback.</p>
           <br/>
           <p>If you happen to not like them, we'll go back <br/> to the drawing board or you get a full refund.</p>
-
+          <br/>
+          <br/>
+          <CtaButton> 
+                <p>
+                  <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                    Get Started &nbsp;&#x2794;
+                  </StyledExternalLink>
+                </p>
+              </CtaButton>
           {/* <TeamGrid>
             {TEAM.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
@@ -105,6 +115,46 @@ const Team = () => (
     )}
   />
 );
+
+const CtaButton = styled.button`
+/* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: white;
+  background-color: #383661;
+  transition: 0.3s;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    background-color: #383661;
+  }
+
+  &:hover{
+    background-color: #0c0a3e;
+  }
+
+`;
+
+const StyledExternalLink = styled(ExternalLink)`
+  color: white;
+  text-decoration: none;
+
+  // &:hover {
+  //   color: ${props => props.theme.color.black.regular};
+  // }
+`;
 
 const TeamGrid = styled.div`
   display: grid;

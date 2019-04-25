@@ -52,9 +52,6 @@ const Header = () => (
     )}
   />
 );
-const ctaStyle = {
-  color: "#f7fff7"
-}
 
 const CtaButton = styled.button`
 /* default for <button>, but useful for <a> */
