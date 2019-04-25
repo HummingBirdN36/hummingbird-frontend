@@ -56,7 +56,7 @@ const Team = () => (
         }
         art_team: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "team_work" }
+          name: { eq: "06" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -67,10 +67,18 @@ const Team = () => (
       }
     `}
     render={data => (
-      <Section id="team" accent="secondary">
+      <Section id="how much does it cost?" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>The Team</h1>
-          <TeamGrid>
+          <h1>Just $10</h1>
+          <br/>
+          <br/>
+          <p>Yup! You read that right.</p>
+          <br/>
+          <p>If you love your selections, you can give us some or all of the $10.</p>
+          <br/>
+          <p>If you happen to not like them, we'll go back <br/> to the drawing board or you get a full refund.</p>
+
+          {/* <TeamGrid>
             {TEAM.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
@@ -84,7 +92,7 @@ const Team = () => (
                 </div>
               );
             })}
-          </TeamGrid>
+          </TeamGrid> */}
           <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
           </Art>

@@ -6,7 +6,7 @@ import Navbar from '@common/Navbar';
 import Header from '@sections/Header';
 import About from '@sections/About';
 import Brands from '@sections/Brands';
-import Team from '@sections/Team';
+import Price from '@sections/Team';
 import Faq from '@sections/FAQ';
 import Footer from '@sections/Footer';
 
@@ -16,6 +16,7 @@ const IndexPage = () => (
     <Header />
     <About />
     <Brands />
+    <Price />
     <Faq />
     <Footer />
   </Layout>

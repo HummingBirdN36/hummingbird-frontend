@@ -46,6 +46,7 @@ const About = () => (
     render={data => (
       <Section id="how does it work?">
         <Container>
+        <h1>How does it work?</h1>
           <Grid>
             <div>
               <h2>Tell us about your decor goals</h2>
