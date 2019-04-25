@@ -32,7 +32,7 @@ const UsedBy = () => (
       query {
         art_story: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "tell_story" }
+          name: { eq: "03" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1200) {
