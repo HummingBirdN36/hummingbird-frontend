@@ -10,8 +10,14 @@ import { ReactComponent as PotteryBarnLogo } from '@static/logos/potterybarn.svg
 import { ReactComponent as HomeSenseLogo } from '@static/logos/homesense.svg';
 import { ReactComponent as BouclairLogo } from '@static/logos/bouclair.svg';
 import { ReactComponent as CrateBarrelLogo } from '@static/logos/cratebarrel.svg';
+import { ReactComponent as UrbanBarnLogo } from '@static/logos/urbanbarn.svg';
+import { ReactComponent as AnthropologieLogo } from '@static/logos/anthropologie.svg';
 
 const LOGOS = [
+  {
+    logo: CrateBarrelLogo,
+    link: 'https://www.bouclair.com/en/',
+  },
   {
     logo: PotteryBarnLogo,
     link: 'http://www.potterybarn.ca/',
@@ -20,10 +26,19 @@ const LOGOS = [
     logo: HomeSenseLogo,
     link: 'https://www.homesense.ca/en',
   },
-  // {
-  //   logo: CrateBarrelLogo,
-  //   link: 'https://www.bouclair.com/en/',
-  // },
+  {
+    logo: BouclairLogo,
+    link: 'https://www.homesense.ca/en',
+  },
+  {
+    logo: UrbanBarnLogo,
+    link: 'https://www.homesense.ca/en',
+  },
+  {
+    logo: AnthropologieLogo,
+    link: 'https://www.homesense.ca/en',
+  },
+ 
 ];
 
 const UsedBy = () => (
@@ -46,7 +61,7 @@ const UsedBy = () => (
       <Section id="brands we shop from" accent>
         <StyledContainer>
           <div>
-            <h1>Shop from the best</h1>
+            <h1>Shop from the best stores</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink href={link}>{logo()}</ExternalLink>
