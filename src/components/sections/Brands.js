@@ -6,38 +6,24 @@ import Img from 'gatsby-image';
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as AirbnbLogo } from '@static/logos/airbnb.svg';
-import { ReactComponent as AppleMusicLogo } from '@static/logos/apple-music.svg';
-import { ReactComponent as CokeLogo } from '@static/logos/coca-cola.svg';
-import { ReactComponent as NodeLogo } from '@static/logos/nodejs.svg';
-import { ReactComponent as NikeLogo } from '@static/logos/nike.svg';
-import { ReactComponent as InstagramLogo } from '@static/logos/instagram.svg';
+import { ReactComponent as PotteryBarnLogo } from '@static/logos/potterybarn.svg';
+import { ReactComponent as HomeSenseLogo } from '@static/logos/homesense.svg';
+import { ReactComponent as BouclairLogo } from '@static/logos/bouclair.svg';
+import { ReactComponent as CrateBarrelLogo } from '@static/logos/cratebarrel.svg';
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
+    logo: PotteryBarnLogo,
+    link: 'http://www.potterybarn.ca/',
   },
   {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
+    logo: HomeSenseLogo,
+    link: 'https://www.homesense.ca/en',
   },
-  {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
-  },
-  {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
-  },
+  // {
+  //   logo: CrateBarrelLogo,
+  //   link: 'https://www.bouclair.com/en/',
+  // },
 ];
 
 const UsedBy = () => (
@@ -57,7 +43,7 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="brands we shop from" accent>
         <StyledContainer>
           <div>
             <h1>Used by biggest in tech</h1>
