@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
+
 const Header = () => (
   <StaticQuery
     query={graphql`
@@ -36,11 +37,14 @@ const Header = () => (
                 you can be proud of.
               </h1>
               <br />
-              {/* <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p> */}
+              <br/>
+              <CtaButton> 
+                <p>
+                  <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                    Take the decor quiz &nbsp;&#x2794;
+                  </StyledExternalLink>
+                </p>
+              </CtaButton>
             </Text>
           </Grid>
         </Container>
@@ -48,7 +52,40 @@ const Header = () => (
     )}
   />
 );
+const ctaStyle = {
+  color: "#f7fff7"
+}
 
+const CtaButton = styled.button`
+/* default for <button>, but useful for <a> */
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  /* create a small space when buttons wrap on 2 lines */
+  margin: 2px 0;
+
+  /* invisible border (will be colored on hover/focus) */
+  border: solid 1px transparent;
+  border-radius: 4px;
+
+  /* size comes from text & padding (no width/height) */
+  padding: 0.5em 1em;
+
+  /* make sure colors have enough contrast! */
+  color: white;
+  background-color: #383661;
+  transition: 0.3s;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    background-color: #383661;
+  }
+
+  &:hover{
+    background-color: #0c0a3e;
+  }
+
+`;
 const HeaderWrapper = styled.header`
   background-color: ${props => props.theme.color.primary};
   padding-top: 96px;
@@ -97,12 +134,12 @@ const Text = styled.div`
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
+  color: white;
   text-decoration: none;
 
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
+  // &:hover {
+  //   color: ${props => props.theme.color.black.regular};
+  // }
 `;
 
 export default Header;
