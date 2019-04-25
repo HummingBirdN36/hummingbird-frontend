@@ -44,7 +44,7 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="why hummingbird?">
+      <Section id="how does it work?">
         <Container>
           <Grid>
             <div>

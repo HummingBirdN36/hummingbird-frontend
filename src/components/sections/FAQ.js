@@ -10,9 +10,9 @@ const FAQS = [
     title: 'What is Hummingbird?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        Hummingbird is an online interior decor service that delivers a fast and personalized shopping experience, for your personal space.
+        Right now, Hummingbird works by filling out a Decor Profile and a Decorator will handpick pieces to fit your tastes, needs and budget. They will send
+        an itemized list with links to purchase right to you.
       </>
     ),
   },
@@ -20,10 +20,29 @@ const FAQS = [
     title: 'How does it work?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+       1. Fill out a Decor Profile
+       <br/>
+       <br/>
+        First, you’ll need to complete a <a href="https://illustrations.design/?ref=producthunt" target="_blank">Decor Profile</a>. This information will help your Decorator understand the items, configurations and styles you’re looking for, as well as your ideal price range. Completing a profile takes about 5-10 minutes. 
+        <br/>
+       <br/>
+        2. Review the items you're sent
+       <br/>
+       <br/>
+        You'll get a time estimate 
+        <br/>
+        <br/>
+        3. Buy what you like
+       <br/>
+       <br/>
+        First, you’ll need to complete a <a href="https://illustrations.design/?ref=producthunt" target="_blank">Decor Profile</a>. This information will help your Decorator understand the items, configurations and styles you’re looking for, as well as your ideal price range. Completing a profile takes about 5-10 minutes. 
+        <br/>
+        <br/>
+        4. Tell us what you think!
+       <br/>
+       <br/>
+        Remember to give us feedback on the items you received. Telling us what you liked, didn’t like and why helps your Decorator know what to send in the future.
+
       </>
     ),
   },
@@ -31,10 +50,16 @@ const FAQS = [
     title: 'Why is it better?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+       The Hummingbird experience is not just curated, it’s truly personalized to your taste, budget and lifestyle. Our Decorators handpick items just for you. 
+      <br/>
+      <br/>
+      We offer decorating for any part of your home.
+      <br/>
+      <br/>
+      Hummingbird makes shopping for your home not just convenient, but effortless. We save you the headache of opening multiple tabs to price compare, multiple trips to the store or the lingering feeling that you are missing something better. Your Decorator will reduce the complex decision of choosing what goes in your home to just a few great selections, all while saving you the time and money. 
+      <br/>
+      <br/>
+      We don't ship items for you just yet, but you bet we're working on it!
       </>
     ),
   },
@@ -42,11 +67,7 @@ const FAQS = [
     title: 'How much does it cost?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
+        Its only 10 bucks!
       </>
     ),
   },
@@ -54,11 +75,7 @@ const FAQS = [
     title: 'What homes can you style?',
     content: () => (
       <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        We can help style most suburban homes and with a bit more time even your special home can find the perfect pieces for it.
       </>
     ),
   },
