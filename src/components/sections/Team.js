@@ -69,8 +69,9 @@ const Team = () => (
     render={data => (
       <Section id="how much does it cost?" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>Just $10</h1>
+          <h1>How much does it cost?</h1>
           <br/>
+          <h2>Just $19.99</h2>
           <br/>
           <p>Yup! You read that right.</p>
           <br/>
