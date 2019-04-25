@@ -77,7 +77,7 @@ const Team = () => (
           <br/>
           <p>Yup! You read that right.</p>
           <br/>
-          <p>If you love your selections, you can give us some, all or nothing. <br/> what we value most is your feedback.</p>
+          <p>If you love your selections, you can give us some, all or nothing. <br/> What we value most is your feedback.</p>
           <br/>
           <p>If you happen to not like them, we'll go back <br/> to the drawing board or you get a full refund.</p>
           <br/>
