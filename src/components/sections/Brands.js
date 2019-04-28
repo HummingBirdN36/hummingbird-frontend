@@ -7,7 +7,7 @@ import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
 
 import { ReactComponent as PotteryBarnLogo } from '@static/logos/potterybarn.svg';
-import { ReactComponent as HomeSenseLogo } from '@static/logos/homesense.svg';
+import { ReactComponent as WayfairLogo } from '@static/logos/wayfair.svg';
 import { ReactComponent as BouclairLogo } from '@static/logos/bouclair.svg';
 import { ReactComponent as CrateBarrelLogo } from '@static/logos/cratebarrel.svg';
 import { ReactComponent as UrbanBarnLogo } from '@static/logos/urbanbarn.svg';
@@ -23,8 +23,8 @@ const LOGOS = [
     link: 'http://www.potterybarn.ca/',
   },
   {
-    logo: HomeSenseLogo,
-    link: 'https://www.homesense.ca/en',
+    logo: WayfairLogo,
+    link: 'https://www.wayfair.ca/',
   },
   {
     logo: BouclairLogo,

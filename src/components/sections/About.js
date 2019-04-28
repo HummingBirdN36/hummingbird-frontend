@@ -49,7 +49,7 @@ const About = () => (
         <h1>How does it work?</h1>
           <Grid>
             <div>
-              <h3>Tell us about your decor goals</h3>
+              <h3>1. Tell us your decor goals</h3>
               <p>
               Fill out a decor profile. Share your home style, tastes and price preferences with your personal decorator.
               </p>
@@ -63,17 +63,17 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h3>Get hand-selected pieces</h3>
+              <h3>2. Get hand-selected pieces</h3>
               <p>
-                Choose from 3-5 hand-selected home decor pieces in each category. Get up 2 revisions. We get you to exactly what you'll like. 
+                Choose from 3-5 hand-selected home decor pieces in each category you request. Get up 2 revisions. <br/><br/>We get you to exactly what you'll like. 
               </p>
             </div>
           </Grid>
           <Grid>
             <div>
-              <h3>Ship it!</h3>
+              <h3>3. Ship it to your home</h3>
               <p>
-                Get links to the items you want. Buy and ship them to your home.
+                Get an itemised list, summary and links to the items you have selected. Buy and ship them to your home.
               </p>
             </div>
             <Art>
