@@ -5,6 +5,16 @@ import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 
+const LinkStyle = styled.a`
+  color: #5762d5;
+  text-decoration: none;
+  transition: 0.5s;
+
+  &:hover{
+    text-decoration:underline;
+  }
+`;
+
 const About = () => (
   <StaticQuery
     query={graphql`
@@ -51,7 +61,7 @@ const About = () => (
             <div>
               <h3>1. Tell us your decor goals</h3>
               <p>
-              Fill out a decor profile. Share your home style, tastes and price preferences with your personal decorator.
+              Fill out a <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank">Decor Profile</LinkStyle>. Share your home style, tastes and price preferences with your personal decorator.
               </p>
             </div>
             <Art>
