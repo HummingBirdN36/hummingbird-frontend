@@ -12,6 +12,7 @@ import { ReactComponent as BouclairLogo } from '@static/logos/bouclair.svg';
 import { ReactComponent as CrateBarrelLogo } from '@static/logos/cratebarrel.svg';
 import { ReactComponent as UrbanBarnLogo } from '@static/logos/urbanbarn.svg';
 import { ReactComponent as AnthropologieLogo } from '@static/logos/anthropologie.svg';
+import { ReactComponent as BBBeyondLogo } from '@static/logos/bbbeyond.svg';
 
 const LOGOS = [
   {
@@ -37,6 +38,10 @@ const LOGOS = [
   {
     logo: AnthropologieLogo,
     link: 'https://www.anthropologie.com/new-home',
+  },
+  {
+    logo: BBBeyondLogo,
+    link: 'https://www.bedbathandbeyond.ca/'
   },
  
 ];
