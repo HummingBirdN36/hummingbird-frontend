@@ -6,7 +6,7 @@ import FaqItem from '@common/FaqItem';
 import ExternalLink from '@common/ExternalLink';
 
 const LinkStyle = styled.a`
-  color: #0c0a3e;
+  color: #5762d5;
   text-decoration: none;
   transition: 0.5s;
 
