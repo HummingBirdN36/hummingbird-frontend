@@ -22,7 +22,7 @@ const FAQS = [
       <>
         Hummingbird is an online interior decor service that delivers a fast and personalized shopping experience for your home.
         <br/> <br/>
-        To use Hummingbird, fill out a <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank"> Decor Profile </LinkStyle> and we will handpick pieces to fit your tastes, needs and budget. Then we send
+        To use Hummingbird, fill out a <LinkStyle href="" target="_blank"> Decor Profile </LinkStyle> and we will handpick pieces to fit your tastes, needs and budget. Then we send
         an itemized list, summary and links to purchase the items right to you.
       </>
     ),
@@ -34,7 +34,7 @@ const FAQS = [
        1. Fill out a Decor Profile
        <br/>
        <br/>
-        First, you’ll need to complete a <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank">Decor Profile </LinkStyle>. This information will help us understand the items, configurations and styles you’re looking for, as well as your ideal price range. Completing a profile takes about 5-10 minutes. 
+        First, you’ll need to complete a <LinkStyle href="" target="_blank">Decor Profile </LinkStyle>. This information will help us understand the items, configurations and styles you’re looking for, as well as your ideal price range. Completing a profile takes about 5-10 minutes. 
         <br/>
        <br/>
         2. Review the items you're sent

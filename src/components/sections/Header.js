@@ -40,7 +40,7 @@ const Header = () => (
               <br/>
               <CtaButton> 
                 <p>
-                  <StyledExternalLink href="https://tolu6.typeform.com/to/CAZzBm">
+                  <StyledExternalLink href="">
                     Take the decor quiz &nbsp;&#x2794;
                   </StyledExternalLink>
                 </p>
