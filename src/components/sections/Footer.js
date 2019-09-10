@@ -69,7 +69,7 @@ const Footer = () => (
               <span style= {footerText}>
                 Project by Tolu Olubode
                 {` `}
-                <ExternalLink href="https://twitter.com/txluu">
+                <ExternalLink href="https://twitter.com/txluuu">
                   @txluu
                 </ExternalLink>
               </span>
