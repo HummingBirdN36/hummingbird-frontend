@@ -70,7 +70,7 @@ const Footer = () => (
                 Project by Tolu Olubode
                 {` `}
                 <ExternalLink href="https://twitter.com/txluuu">
-                  @txluu
+                  @txluuu
                 </ExternalLink>
               </span>
             </Copyright>
