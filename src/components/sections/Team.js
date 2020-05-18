@@ -1,42 +1,42 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import styled from "styled-components";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import ExternalLink from '@common/ExternalLink';
+import ExternalLink from "@common/ExternalLink";
 
-import { Section, Container } from '@components/global';
+import { Section, Container } from "@components/global";
 
 const TEAM = [
   {
-    name: 'Josh Peck',
-    image: 'josh.jpg',
-    role: 'Founder',
+    name: "Josh Peck",
+    image: "josh.jpg",
+    role: "Founder",
   },
   {
-    name: 'Lisa Haydon',
-    image: 'lisa.jpg',
-    role: 'Art Director',
+    name: "Lisa Haydon",
+    image: "lisa.jpg",
+    role: "Art Director",
   },
   {
-    name: 'Ashlyn Harris',
-    image: 'ashlyn.jpg',
-    role: 'Frontend Engineer',
+    name: "Ashlyn Harris",
+    image: "ashlyn.jpg",
+    role: "Frontend Engineer",
   },
   {
-    name: 'Todd Joseph',
-    image: 'todd.jpg',
-    role: 'Designer',
+    name: "Todd Joseph",
+    image: "todd.jpg",
+    role: "Designer",
   },
   {
-    name: 'Martin White',
-    image: 'martin.jpg',
-    role: 'Backend Engineer',
+    name: "Martin White",
+    image: "martin.jpg",
+    role: "Backend Engineer",
   },
   {
-    name: 'Rose Leslie',
-    image: 'rose.jpg',
-    role: 'Marketing',
+    name: "Rose Leslie",
+    image: "rose.jpg",
+    role: "Marketing",
   },
 ];
 
@@ -56,10 +56,7 @@ const Team = () => (
             }
           }
         }
-        art_team: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "06" }
-        ) {
+        art_team: file(sourceInstanceName: { eq: "art" }, name: { eq: "06" }) {
           childImageSharp {
             fluid(maxWidth: 1600) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
@@ -68,27 +65,33 @@ const Team = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Section id="how much does it cost?" accent="secondary">
-        <Container style={{ position: 'relative' }}>
+        <Container style={{ position: "relative" }}>
           <h1>How much does it cost?</h1>
-          <br/>
+          <br />
           <h2>Just $19.99</h2>
-          <br/>
+          <br />
           <p>Yup! You read that right.</p>
-          <br/>
-          <p>If you love your selections, you can give us all, some or none of the total price. <br/> What we value most is your feedback.</p>
-          <br/>
-          <p>If you happen to not like them, we'll go back <br/> to the drawing board or you get a full refund.</p>
-          <br/>
-          <br/>
-          <CtaButton> 
-                <p>
-                  <StyledExternalLink href="https://tolu6.typeform.com/to/CAZzBm">
-                    Get Started &nbsp;&#x2794;
-                  </StyledExternalLink>
-                </p>
-              </CtaButton>
+          <br />
+          <p>
+            If you love your selections, you can give us all, some or none of
+            the total price. <br /> What we value most is your feedback.
+          </p>
+          <br />
+          <p>
+            If you happen to not like them, we'll go back <br /> to the drawing
+            board or you get a full refund.
+          </p>
+          <br />
+          <br />
+          <CtaButton>
+            <p>
+              <StyledExternalLink href="https://tolu6.typeform.com/to/CAZzBm">
+                Get Started &nbsp;&#x2794;
+              </StyledExternalLink>
+            </p>
+          </CtaButton>
           {/* <TeamGrid>
             {TEAM.map(({ name, image, role }) => {
               const img = data.allFile.edges.find(
@@ -104,12 +107,12 @@ const Team = () => (
               );
             })}
           </TeamGrid> */}
-          <Art>
+          {/* <Art>
             <Img fluid={data.art_team.childImageSharp.fluid} />
           </Art>
           <ArtMobile>
             <Img fluid={data.art_team.childImageSharp.fluid} />
-          </ArtMobile>
+          </ArtMobile> */}
         </Container>
       </Section>
     )}
@@ -117,7 +120,7 @@ const Team = () => (
 );
 
 const CtaButton = styled.button`
-/* default for <button>, but useful for <a> */
+  /* default for <button>, but useful for <a> */
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -137,14 +140,13 @@ const CtaButton = styled.button`
   background-color: #383661;
   transition: 0.3s;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     background-color: #383661;
   }
 
-  &:hover{
+  &:hover {
     background-color: #0c0a3e;
   }
-
 `;
 
 const StyledExternalLink = styled(ExternalLink)`
@@ -152,7 +154,7 @@ const StyledExternalLink = styled(ExternalLink)`
   text-decoration: none;
 
   // &:hover {
-  //   color: ${props => props.theme.color.black.regular};
+  //   color: ${(props) => props.theme.color.black.regular};
   // }
 `;
 
@@ -165,16 +167,16 @@ const TeamGrid = styled.div`
   width: 60%;
   margin-top: 72px;
 
-  @media (max-width: ${props => props.theme.screen.lg}) {
+  @media (max-width: ${(props) => props.theme.screen.lg}) {
     justify-content: start;
   }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     width: 100%;
     grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   }
 
-  @media (max-width: ${props => props.theme.screen.xs}) {
+  @media (max-width: ${(props) => props.theme.screen.xs}) {
     grid-gap: 24px;
   }
 `;
@@ -186,11 +188,11 @@ const Art = styled.figure`
   top: 0;
   left: 70%;
 
-  @media (max-width: ${props => props.theme.screen.lg}) {
+  @media (max-width: ${(props) => props.theme.screen.lg}) {
     top: 20%;
   }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     display: none;
   }
 `;
@@ -202,19 +204,19 @@ const ArtMobile = styled.figure`
   margin-top: 64px;
   margin-bottom: -60%;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     display: block;
   }
 `;
 
 const Title = styled.p`
   margin-top: 16px;
-  color: ${props => props.theme.color.black.regular};
+  color: ${(props) => props.theme.color.black.regular};
 `;
 
 const Subtitle = styled.p`
-  ${props => props.theme.font_size.small};
-  color: ${props => props.theme.color.black.light};
+  ${(props) => props.theme.font_size.small};
+  color: ${(props) => props.theme.color.black.light};
 `;
 
 export default Team;
