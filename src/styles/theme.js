@@ -21,6 +21,8 @@ const theme = {
       regular: "#211E26",
     },
     primary: "white",
+    cta: "rgb(30, 48, 110)",
+    ctahover: "rgb(82, 102, 153)",
   },
   screen: {
     xs: "575px",

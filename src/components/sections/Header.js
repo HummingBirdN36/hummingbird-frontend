@@ -70,15 +70,16 @@ const CtaButton = styled.button`
 
   /* make sure colors have enough contrast! */
   color: white;
-  background-color: #383661;
+  background-color: ${(props) => props.theme.color.cta};
   transition: 0.3s;
 
   @media (max-width: ${(props) => props.theme.screen.md}) {
-    background-color: #383661;
+    background-color: ${(props) => props.theme.color.cta};
   }
 
   &:hover {
-    background-color: #0c0a3e;
+    transform: scale(1.1);
+    background-color: ${(props) => props.theme.color.ctahover};
   }
 `;
 const HeaderWrapper = styled.header`
