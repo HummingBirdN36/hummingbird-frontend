@@ -31,7 +31,7 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Design the home
+                Decorate the home
                 <br />
                 you can be proud of.
               </h1>
