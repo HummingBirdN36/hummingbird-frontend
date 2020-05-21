@@ -39,10 +39,10 @@ const LOGOS = [
     logo: AnthropologieLogo,
     link: "https://www.anthropologie.com/new-home",
   },
-  {
-    logo: BBBeyondLogo,
-    link: "https://www.bedbathandbeyond.ca/",
-  },
+  // {
+  //   logo: BBBeyondLogo,
+  //   link: "https://www.bedbathandbeyond.ca/",
+  // },
 ];
 
 const UsedBy = () => (
