@@ -1,19 +1,20 @@
-import React from 'react';
-import Helmet from 'react-helmet';
+import React from "react";
+import Helmet from "react-helmet";
 
 const SEO_DATA = {
-  description: 'Hummingbird Site',
-  title: 'Hummingbird',
-  url: '',
-  author: 'toluolubode',
-  keywords: ['gatsby', 'site', 'hummingbird'],
+  description:
+    "You deserve a better space! Hummingbird is the home interior decoration service that bridges data science and human curation to personalize interior home decor based on  your budget, style, home size and personal connection. Take the decor quiz today",
+  title: "Hummingbird",
+  url: "https://www.tryhummingbird.ca/",
+  author: "toluolubode",
+  keywords: ["gatsby", "site", "hummingbird"],
   twitter: {
-    id: 'txluu',
-    img: '',
+    id: "txluu",
+    img: "",
   },
   facebook: {
-    id: '',
-    img: '',
+    id: "",
+    img: "",
   },
 };
 
@@ -36,7 +37,7 @@ const SEO = () => {
       <meta name="twitter:image:src" content={SEO_DATA.img} />
 
       <meta name="description" content={SEO_DATA.description} />
-      <meta name="keywords" content={SEO_DATA.keywords.join(', ')} />
+      <meta name="keywords" content={SEO_DATA.keywords.join(", ")} />
       <meta name="author" content={SEO_DATA.author} />
       <title>{SEO_DATA.title}</title>
       <html lang="en" />
