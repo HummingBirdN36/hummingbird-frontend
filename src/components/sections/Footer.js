@@ -1,31 +1,31 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import { Container } from "@components/global";
-import ExternalLink from "@common/ExternalLink";
+import { Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as GithubIcon } from "@static/icons/github.svg";
-import { ReactComponent as InstagramIcon } from "@static/icons/instagram.svg";
-import { ReactComponent as TwitterIcon } from "@static/icons/twitter.svg";
+import { ReactComponent as GithubIcon } from '@static/icons/github.svg';
+import { ReactComponent as InstagramIcon } from '@static/icons/instagram.svg';
+import { ReactComponent as TwitterIcon } from '@static/icons/twitter.svg';
 
 const footerText = {
-  fontSize: "15px",
+  fontSize: '15px',
 };
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: "https://github.com/ajayns/gatsby-absurd",
+    link: 'https://github.com/ajayns/gatsby-absurd',
   },
   {
     icon: InstagramIcon,
-    link: "https://instagram.com/ajay_ns",
+    link: 'https://instagram.com/ajay_ns',
   },
   {
     icon: TwitterIcon,
-    link: "https://twitter.com/ajayns08",
+    link: 'https://twitter.com/ajayns08',
   },
 ];
 
@@ -45,7 +45,7 @@ const Footer = () => (
         }
       }
     `}
-    render={(data) => (
+    render={data => (
       <React.Fragment>
         {/* <Art>
           <Img
@@ -85,26 +85,26 @@ const SocialIcons = styled.div`
   display: flex;
 
   svg {
-    color: ${(props) => props.theme.color.black.regular};
+    color: ${props => props.theme.color.black.regular};
     margin: 0 8px;
     width: 24px;
     height: 24px;
   }
 
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
+  @media (max-width: ${props => props.theme.screen.sm}) {
     margin-top: 40px;
   }
 `;
 
 const FooterWrapper = styled.footer`
-  background-color: ${(props) => props.theme.color.primary};
+  background-color: ${props => props.theme.color.primary};
   padding: 32px 0;
 `;
 
 const Copyright = styled.div`
-  font-family: ${(props) => props.theme.font.secondary};
-  ${(props) => props.theme.font_size.small};
-  color: ${(props) => props.theme.color.black.regular};
+  font-family: ${props => props.theme.font.secondary};
+  ${props => props.theme.font_size.small};
+  color: ${props => props.theme.color.black.regular};
 
   a {
     text-decoration: none;
@@ -124,7 +124,7 @@ const StyledContainer = styled(Container)`
   justify-content: space-between;
   align-items: center;
 
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
+  @media (max-width: ${props => props.theme.screen.sm}) {
     flex-direction: column;
     text-align: center;
   }

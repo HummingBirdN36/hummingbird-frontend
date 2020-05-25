@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Kollektif-Bold';
+  src: url('Kollektif-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Kollektif-BoldItalic';
+  src: url('Kollektif-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Kollektif-Italic';
+  src: url('Kollektif-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Kollektif';
+  src: url('Kollektif.ttf');
+}

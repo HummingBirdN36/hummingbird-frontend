@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 
 const SEO_DATA = {
   description:
-    "You deserve a better space! Hummingbird is the home interior decoration service that bridges data science and human curation to personalize interior home decor based on  your budget, style, home size and personal connection. Take the decor quiz today",
+    "You deserve a better space! Hummingbird is a home interior decoration service that bridges data science and human curation to personalize interior home decor based on  your budget, style, home size and personal connection. Take the decor quiz today",
   title: "Hummingbird",
   url: "https://www.tryhummingbird.ca/",
   author: "toluolubode",

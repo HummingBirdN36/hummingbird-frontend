@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   ${normalize};
 
   body {
-    font-family: ${props => props.theme.font.secondary};
+    font-family: ${props => props.theme.font.custombold};
   }
 
   h1, h2, h3, p {
@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2 {
-    font-family: ${props => props.theme.font.primary};
+    font-family: ${props => props.theme.font.custom};
   }
 
   h1 {
@@ -33,6 +33,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   p {
+    font-family: ${props => props.theme.font.custom};
     ${props => props.theme.font_size.regular};
     color: ${props => props.theme.color.black.light};
   }
