@@ -65,7 +65,7 @@ const UsedBy = () => (
       <Section id="brands we shop from" accent>
         <StyledContainer>
           <div>
-            <h1>Shop from the best stores</h1>
+            <h1>Top quality, guaranteed</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink href={link}>{logo()}</ExternalLink>

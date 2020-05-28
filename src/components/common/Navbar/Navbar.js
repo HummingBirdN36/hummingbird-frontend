@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
+import { Link } from 'gatsby';
 
 import { Container } from '@components/global';
 import {
@@ -15,7 +16,12 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['How does it work?', 'Brands we shop from','How much does it cost?', 'FAQ'];
+const NAV_ITEMS = [
+  'How does it work?',
+  'Brands we shop from',
+  'How much does it cost?',
+  'FAQ',
+];
 
 class Navbar extends Component {
   state = {
