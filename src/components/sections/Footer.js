@@ -11,8 +11,8 @@ import { ReactComponent as InstagramIcon } from '@static/icons/instagram.svg';
 import { ReactComponent as TwitterIcon } from '@static/icons/twitter.svg';
 
 const footerText = {
-  fontSize: '15px'
-}
+  fontSize: '15px',
+};
 
 const SOCIAL = [
   {
@@ -47,26 +47,26 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
+        {/* <Art>
           <Img
             fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
+            style={{ width: 480, maxWidth: "100%", marginBottom: -16 }}
           />
-        </Art>
+        </Art> */}
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
               <h2>Hummingbird</h2>
-              <br/>
-              <span style= {footerText}>
+              <br />
+              <span style={footerText}>
                 Illustrations by
                 {` `}
-                <ExternalLink href="https://twitter.com/diana_valeanu">
-                  @diana_valeanu
+                <ExternalLink href="https://blush.design/artists/pablo-stanley">
+                  Pablo Stanley @ Blush Designs
                 </ExternalLink>
               </span>
-              <br/>
-              <span style= {footerText}>
+              <br />
+              <span style={footerText}>
                 Project by Tolu Olubode
                 {` `}
                 <ExternalLink href="https://twitter.com/txluuu">

@@ -1,11 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import styled from "styled-components";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
-
+import { Container } from "@components/global";
+import ExternalLink from "@common/ExternalLink";
 
 const Header = () => (
   <StaticQuery
@@ -13,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "dreamer" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -23,7 +22,7 @@ const Header = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <HeaderWrapper>
         <Container>
           <Grid>
@@ -32,16 +31,16 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Design the home
+                Decorate the home
                 <br />
                 you can be proud of.
               </h1>
               <br />
-              <br/>
-              <CtaButton> 
+              <br />
+              <CtaButton>
                 <p>
                   <StyledExternalLink href="https://tolu6.typeform.com/to/CAZzBm">
-                    Take the decor quiz &nbsp;&#x2794;
+                    Take your decor quiz &nbsp;&#x2794;
                   </StyledExternalLink>
                 </p>
               </CtaButton>
@@ -54,7 +53,7 @@ const Header = () => (
 );
 
 const CtaButton = styled.button`
-/* default for <button>, but useful for <a> */
+  /* default for <button>, but useful for <a> */
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -71,23 +70,23 @@ const CtaButton = styled.button`
 
   /* make sure colors have enough contrast! */
   color: white;
-  background-color: #383661;
+  background-color: ${(props) => props.theme.color.cta};
   transition: 0.3s;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
-    background-color: #383661;
+  @media (max-width: ${(props) => props.theme.screen.md}) {
+    background-color: ${(props) => props.theme.color.cta};
   }
 
-  &:hover{
-    background-color: #0c0a3e;
+  &:hover {
+    transform: scale(1.1);
+    background-color: ${(props) => props.theme.color.ctahover};
   }
-
 `;
 const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
+  background-color: ${(props) => props.theme.color.primary};
   padding-top: 96px;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     padding-top: 128px;
   }
 `;
@@ -100,8 +99,11 @@ const Art = styled.figure`
     width: 120%;
     margin-bottom: -4.5%;
 
-    @media (max-width: ${props => props.theme.screen.md}) {
+    @media (max-width: ${(props) => props.theme.screen.md}) {
       width: 100%;
+    }
+    @media (max-width: ${(props) => props.theme.screen.sm}) {
+      display: none;
     }
   }
 `;
@@ -110,9 +112,9 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 120px;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 80px;
 
@@ -125,7 +127,7 @@ const Grid = styled.div`
 const Text = styled.div`
   justify-self: center;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     justify-self: start;
   }
 `;
@@ -135,7 +137,7 @@ const StyledExternalLink = styled(ExternalLink)`
   text-decoration: none;
 
   // &:hover {
-  //   color: ${props => props.theme.color.black.regular};
+  //   color: ${(props) => props.theme.color.black.regular};
   // }
 `;
 

@@ -40,6 +40,17 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: [
+            'Kollektif,Kollektif-Bold,Kollektif-BoldItalic, Kollektif-Italic',
+          ],
+          urls: ['/fonts/fonts.css'],
+        },
+      },
+    },
+    {
       resolve: `gatsby-plugin-alias-imports`,
       options: {
         alias: {

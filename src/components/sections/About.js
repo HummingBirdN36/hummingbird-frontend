@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import React from "react";
+import styled from "styled-components";
+import { StaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-import { Section, Container } from '@components/global';
+import { Section, Container } from "@components/global";
 
 const LinkStyle = styled.a`
   color: #5762d5;
   text-decoration: none;
   transition: 0.5s;
 
-  &:hover{
-    text-decoration:underline;
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
@@ -21,7 +21,7 @@ const About = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "04" }
+          name: { eq: "profile-1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -32,7 +32,7 @@ const About = () => (
 
         art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "02" }
+          name: { eq: "handpiece-1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -43,7 +43,7 @@ const About = () => (
 
         art_ideas: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "09" }
+          name: { eq: "handpiece" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -53,15 +53,23 @@ const About = () => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <Section id="how does it work?">
         <Container>
-        <h1>How does it work?</h1>
+          <h2>How does it work?</h2>
           <Grid>
             <div>
               <h3>1. Tell us your decor goals</h3>
               <p>
-              Fill out a <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank">Decor Profile</LinkStyle>. Share your home style, tastes and price preferences with your personal decorator.
+                Fill out a{" "}
+                <LinkStyle
+                  href="https://tolu6.typeform.com/to/CAZzBm"
+                  target="_blank"
+                >
+                  Decor Profile
+                </LinkStyle>
+                . Share your home style, tastes and price preferences with your
+                personal decorator.
               </p>
             </div>
             <Art>
@@ -75,7 +83,10 @@ const About = () => (
             <div>
               <h3>2. Get hand-selected pieces</h3>
               <p>
-                Choose from 3-5 hand-selected home decor pieces in each category you request. Get up 2 revisions. <br/><br/>We get you to exactly what you'll like. 
+                Choose from 3-5 hand-selected home decor pieces in each category
+                you request. Get up 2 revisions. <br />
+                <br />
+                We get you to exactly what you'll like.
               </p>
             </div>
           </Grid>
@@ -83,7 +94,8 @@ const About = () => (
             <div>
               <h3>3. Ship it to your home</h3>
               <p>
-                Get an itemised list, summary and links to the items you have selected. Buy and ship them to your home.
+                Get an itemised list, summary and links to the items you have
+                selected. Buy and ship them to your home.
               </p>
             </div>
             <Art>
@@ -106,7 +118,7 @@ const Grid = styled.div`
   justify-items: center;
   margin: 24px 0;
 
-  ${props =>
+  ${(props) =>
     props.inverse &&
     `
     text-align: left;
@@ -121,7 +133,7 @@ const Grid = styled.div`
     margin-bottom: 13px;
   }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${(props) => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     text-align: left;
     margin-bottom: 96px;
@@ -130,7 +142,7 @@ const Grid = styled.div`
       margin-bottom: 24px;
     }
 
-    ${props =>
+    ${(props) =>
       props.inverse &&
       `
         ${Art} {
