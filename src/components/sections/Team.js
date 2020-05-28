@@ -88,7 +88,7 @@ const Team = () => (
           <CtaButton>
             <p>
               <StyledExternalLink href="https://tolu6.typeform.com/to/CAZzBm">
-                Get Started &nbsp;&#x2794;
+                Take your decor quiz &nbsp;&#x2794;
               </StyledExternalLink>
             </p>
           </CtaButton>
