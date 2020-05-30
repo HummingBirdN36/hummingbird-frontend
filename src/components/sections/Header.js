@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import { Container } from "@components/global";
-import ExternalLink from "@common/ExternalLink";
+import { Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
@@ -22,7 +22,7 @@ const Header = () => (
         }
       }
     `}
-    render={(data) => (
+    render={data => (
       <HeaderWrapper>
         <Container>
           <Grid>
@@ -70,23 +70,23 @@ const CtaButton = styled.button`
 
   /* make sure colors have enough contrast! */
   color: white;
-  background-color: ${(props) => props.theme.color.cta};
+  background-color: ${props => props.theme.color.cta};
   transition: 0.3s;
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
-    background-color: ${(props) => props.theme.color.cta};
+  @media (max-width: ${props => props.theme.screen.md}) {
+    background-color: ${props => props.theme.color.cta};
   }
 
   &:hover {
     transform: scale(1.1);
-    background-color: ${(props) => props.theme.color.ctahover};
+    background-color: ${props => props.theme.color.ctahover};
   }
 `;
 const HeaderWrapper = styled.header`
-  background-color: ${(props) => props.theme.color.primary};
+  background-color: ${props => props.theme.color.primary};
   padding-top: 96px;
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     padding-top: 128px;
   }
 `;
@@ -99,10 +99,10 @@ const Art = styled.figure`
     width: 120%;
     margin-bottom: -4.5%;
 
-    @media (max-width: ${(props) => props.theme.screen.md}) {
+    @media (max-width: ${props => props.theme.screen.md}) {
       width: 100%;
     }
-    @media (max-width: ${(props) => props.theme.screen.sm}) {
+    @media (max-width: ${props => props.theme.screen.sm}) {
       display: none;
     }
   }
@@ -114,7 +114,7 @@ const Grid = styled.div`
   align-items: center;
   grid-gap: 120px;
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     grid-gap: 80px;
 
@@ -127,7 +127,7 @@ const Grid = styled.div`
 const Text = styled.div`
   justify-self: center;
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
   }
 `;
@@ -137,7 +137,7 @@ const StyledExternalLink = styled(ExternalLink)`
   text-decoration: none;
 
   // &:hover {
-  //   color: ${(props) => props.theme.color.black.regular};
+  //   color: ${props => props.theme.color.black.regular};
   // }
 `;
 
