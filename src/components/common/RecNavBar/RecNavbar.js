@@ -18,7 +18,7 @@ import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
 const NAV_ITEMS = ["Niharika's Recommendations"];
 
-class Navbar extends Component {
+class RecNavbar extends Component {
   state = {
     mobileMenuOpen: false,
   };
@@ -81,4 +81,4 @@ class Navbar extends Component {
   }
 }
 
-export default Navbar;
+export default RecNavbar;

@@ -7,11 +7,11 @@ import Header from '@sections/Header';
 // import About from '@sections/About';
 import NBrands from '@sections/NBrands';
 
-import Navbar from '@common/RecNavbar';
+import RecNavbar from '@common/RecNavbar';
 
 const SecondPage = () => (
   <Layout>
-    <Navbar />
+    <RecNavbar />
     {/* <Header /> */}
     <NBrands />
     <Container>
