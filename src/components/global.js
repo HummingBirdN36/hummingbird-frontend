@@ -58,6 +58,10 @@ export const Section2 = styled.section`
     letter-spacing: -1.25px;
   }
 
+  #quoteperson {
+    font-size: 22px;
+  }
+
   h3 {
     color: white;
     text-align: center;

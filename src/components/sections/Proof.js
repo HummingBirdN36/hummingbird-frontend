@@ -11,10 +11,10 @@ import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
 
 var settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5000,
 };
 
 const LinkStyle = styled.a`
@@ -96,6 +96,7 @@ const Proof = () => (
                 "It's like getting a recommendation from a friend-I didn't have
                 to think twice."
               </p>
+              <p id="quoteperson">- Niharika, Bay Area, California</p>
               {/* <div class="social-image">
                 <img src="http://placekitten.com/g/400/200" />
               </div> */}
@@ -104,6 +105,7 @@ const Proof = () => (
               <p>
                 "The selections are so spot on
                 <br /> I could totally see a lot of these items in my home."
+                <p id="quoteperson">- Arjun, Toronto, Canada</p>
               </p>
             </div>
             <div>
@@ -111,6 +113,7 @@ const Proof = () => (
                 "This stuff is absolutely beautiful! <br /> Its super helpful
                 when you're figuring things out for your space."
               </p>
+              <p id="quoteperson">- Aniea, California</p>
             </div>
           </Slider>
           {/* <Grid inverse>
