@@ -45,3 +45,38 @@ export const Section = styled.section`
         : props.theme.color.primary
     }`};
 `;
+
+export const Section2 = styled.section`
+  padding: 120px 0;
+  overflow: hidden;
+
+  p {
+    text-align: center;
+    color: white;
+    font-size: 65px;
+    line-height: 75px;
+    letter-spacing: -1.25px;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .social-image {
+    border-radius: 50%;
+  }
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    padding: 96px 0;
+  }
+
+  ${props =>
+    props.accent &&
+    `background-color: ${
+      props.accent === 'secondary'
+        ? props.theme.color.white.ctaproof
+        : props.theme.color.primary
+    }`};
+`;

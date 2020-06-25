@@ -1,9 +1,21 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import { Section, Container } from "@components/global";
+import { Section2, Container } from '@components/global';
+
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+import Slider from 'react-slick';
+
+var settings = {
+  dots: true,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 3000,
+};
 
 const LinkStyle = styled.a`
   color: #5762d5;
@@ -21,7 +33,7 @@ const Proof = () => (
       query {
         art_fast: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "profile-1" }
+          name: { eq: "face-1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -32,7 +44,7 @@ const Proof = () => (
 
         art_learn: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "handpiece-1" }
+          name: { eq: "face-2" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {
@@ -53,10 +65,10 @@ const Proof = () => (
         }
       }
     `}
-    render={(data) => (
-      <Section id="how does it work?">
+    render={data => (
+      <Section2 id="social proof" accent="secondary">
         <Container>
-          <h2>Our customers love us 💙</h2>
+          <h3>From our customers</h3>
           <br />
           <br />
           {/* <Grid>
@@ -78,16 +90,39 @@ const Proof = () => (
               <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
           </Grid> */}
-          <Grid inverse>
+          <Slider {...settings}>
+            <div>
+              <p>
+                "It's like getting a recommendation from a friend-I didn't have
+                to think twice."
+              </p>
+              {/* <div class="social-image">
+                <img src="http://placekitten.com/g/400/200" />
+              </div> */}
+            </div>
+            <div>
+              <p>
+                "The selections are so spot on
+                <br /> I could totally see a lot of these items in my home."
+              </p>
+            </div>
+            <div>
+              <p>
+                "This stuff is absolutely beautiful! <br /> Its super helpful
+                when you're figuring things out for your space."
+              </p>
+            </div>
+          </Slider>
+          {/* <Grid inverse>
             <Art>
-              <Img fluid={data.art_learn.childImageSharp.fluid} />
+              <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
             <div>
               <h3>Niharika, Bay Area</h3>
               <p>
                 "Hummingbird is like getting a recommendation from a friend. I
                 really really liked what they picked out! It goes well with the
-                color theme of the room."
+                color theme of my room."
               </p>
             </div>
           </Grid>
@@ -100,10 +135,8 @@ const Proof = () => (
             <div>
               <h3>Arjun, Toronto</h3>
               <p>
-                Choose from 3-5 hand-selected home decor pieces in each category
-                you request. Get up 2 revisions. <br />
-                <br />
-                We get you to exactly what you'll like.
+                "These recommendations are so spot on, I could totally see a lot
+                of these items in my home."
               </p>
             </div>
           </Grid>
@@ -116,14 +149,18 @@ const Proof = () => (
             <div>
               <h3>Aniea, California</h3>
               <p>
-                This stuff is absolutely beautiful and spot on! <br />
+                "This stuff is absolutely beautiful its super
+                helpful for figuring out where I can buy cool stuff for my
+                apartment." <br />
                 <br />
               </p>
             </div>
-          </Grid>
-          <h2>Hummingbird is fast in every way that matters.</h2>
+          </Grid> */}
+          {/* <br />
+          <br />
+          <h2>Hummingbird is fast in every way that matters.</h2> */}
         </Container>
-      </Section>
+      </Section2>
     )}
   />
 );
@@ -137,7 +174,7 @@ const Grid = styled.div`
   justify-items: center;
   margin: 24px 0;
 
-  ${(props) =>
+  ${props =>
     props.inverse &&
     `
     text-align: left;
@@ -149,10 +186,12 @@ const Grid = styled.div`
   }
 
   h3 {
+    font-size: 22px;
+    text-align: center;
     margin-bottom: 13px;
   }
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
     text-align: left;
     margin-bottom: 96px;
@@ -161,7 +200,7 @@ const Grid = styled.div`
       margin-bottom: 24px;
     }
 
-    ${(props) =>
+    ${props =>
       props.inverse &&
       `
         ${Art} {
