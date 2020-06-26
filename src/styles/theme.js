@@ -18,7 +18,7 @@ const theme = {
     white: {
       regular: '#FFFFFF',
       dark: '#F6F6F6',
-      ctaproof: '#e6b022',
+      ctaproof: '#ffc43b',
     },
     black: {
       lighter: '#ABA8AF',

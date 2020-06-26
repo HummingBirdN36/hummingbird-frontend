@@ -74,6 +74,14 @@ export const Section2 = styled.section`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding: 96px 0;
+    #quote {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    #quoteperson {
+      font-size: 18px;
+    }
   }
 
   ${props =>
