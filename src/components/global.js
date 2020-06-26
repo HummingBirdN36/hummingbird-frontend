@@ -72,7 +72,8 @@ export const Section2 = styled.section`
     border-radius: 50%;
   }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
+  @media (max-width: ${props =>
+      props.theme.screen.sm && props.theme.screen.md}) {
     padding: 96px 0;
     #quote {
       font-size: 30px;
