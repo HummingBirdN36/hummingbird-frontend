@@ -47,13 +47,13 @@ export const Section = styled.section`
 `;
 
 export const Section2 = styled.section`
-  padding: 120px 0;
+  padding: 80px 0;
   overflow: hidden;
 
   p {
     text-align: center;
     color: white;
-    font-size: 65px;
+    font-size: 50px;
     line-height: 75px;
     letter-spacing: -1.25px;
   }
