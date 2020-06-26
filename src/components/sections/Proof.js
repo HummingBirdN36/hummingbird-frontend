@@ -13,8 +13,8 @@ import Slider from 'react-slick';
 var settings = {
   dots: false,
   arrows: false,
-  autoplay: false,
-  autoplaySpeed: 5000,
+  autoplay: true,
+  autoplaySpeed: 3500,
 };
 
 const LinkStyle = styled.a`
