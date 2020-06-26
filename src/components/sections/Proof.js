@@ -13,7 +13,7 @@ import Slider from 'react-slick';
 var settings = {
   dots: false,
   arrows: false,
-  autoplay: true,
+  autoplay: false,
   autoplaySpeed: 5000,
 };
 
@@ -92,28 +92,51 @@ const Proof = () => (
           </Grid> */}
           <Slider {...settings}>
             <div>
-              <p>
+              <p id="quote">
                 "It's like getting a recommendation from a friend-I didn't have
                 to think twice."
               </p>
-              <p id="quoteperson">- Niharika, Bay Area, California</p>
-              {/* <div class="social-image">
-                <img src="http://placekitten.com/g/400/200" />
-              </div> */}
+
+              <div id="sociallabel">
+                <div id="socialimage">
+                  <img
+                    id="quoteimage"
+                    src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-19/s320x320/34709266_1283807998389296_584650176900104192_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_ohc=zXtHadsiix4AX93vKHG&oh=5849cfb2f463dd26798197a45c8fc760&oe=5F207433"
+                  />
+                </div>
+                <p id="quoteperson"> Niharika, Bay Area, California</p>
+              </div>
             </div>
             <div>
-              <p>
+              <p id="quote">
                 "The selections are so spot on
                 <br /> I could totally see a lot of these items in my home."
-                <p id="quoteperson">- Arjun, Toronto, Canada</p>
+                <div id="sociallabel">
+                  <div id="socialimage">
+                    <img
+                      id="quoteimage"
+                      src="https://twitter.com/arjunkalburgi/photo"
+                    />
+                  </div>
+                  <p id="quoteperson"> Arjun, Toronto, Canada</p>
+                </div>
               </p>
             </div>
             <div>
-              <p>
+              <p id="quote">
                 "This stuff is absolutely beautiful! <br /> Its super helpful
                 when you're figuring things out for your space."
               </p>
-              <p id="quoteperson">- Aniea, California</p>
+
+              <div id="sociallabel">
+                <div id="socialimage">
+                  <img
+                    id="quoteimage"
+                    src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-19/s320x320/70384640_518777428910492_2396060214605381632_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_ohc=OeT-CptMLqoAX9TZyVK&oh=e19da61e4ea03e12c010bb4a4eb2eb9f&oe=5F21CF53"
+                  />
+                </div>
+                <p id="quoteperson"> Aniea, California</p>
+              </div>
             </div>
           </Slider>
           {/* <Grid inverse>

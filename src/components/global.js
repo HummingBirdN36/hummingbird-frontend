@@ -58,8 +58,26 @@ export const Section2 = styled.section`
     letter-spacing: -1.25px;
   }
 
+  #sociallabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  #socialimage {
+    padding: 12px;
+  }
+
   #quoteperson {
-    font-size: 22px;
+    font-size: 16px;
+  }
+
+  #quoteimage {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
   }
 
   h3 {
