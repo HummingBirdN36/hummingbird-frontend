@@ -115,7 +115,7 @@ const Proof = () => (
                   <div id="socialimage">
                     <img
                       id="quoteimage"
-                      src="https://twitter.com/arjunkalburgi/photo"
+                      src="https://pbs.twimg.com/profile_images/1183088546414022656/dM8IGj5V_400x400.jpg"
                     />
                   </div>
                   <p id="quoteperson"> Arjun, Toronto, Canada</p>
