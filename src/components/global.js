@@ -45,3 +45,69 @@ export const Section = styled.section`
         : props.theme.color.primary
     }`};
 `;
+
+export const Section2 = styled.section`
+  padding: 80px 0;
+  overflow: hidden;
+
+  p {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    line-height: 75px;
+    letter-spacing: -1.25px;
+  }
+
+  #sociallabel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+  }
+
+  #socialimage {
+    padding: 12px;
+  }
+
+  #quoteperson {
+    font-size: 16px;
+  }
+
+  #quoteimage {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+  }
+
+  h3 {
+    color: white;
+    text-align: center;
+    font-size: 22px;
+  }
+
+  .social-image {
+    border-radius: 50%;
+  }
+
+  @media (max-width: ${props =>
+      props.theme.screen.sm && props.theme.screen.md}) {
+    padding: 96px 0;
+    #quote {
+      font-size: 30px;
+      line-height: 45px;
+    }
+
+    #quoteperson {
+      font-size: 18px;
+    }
+  }
+
+  ${props =>
+    props.accent &&
+    `background-color: ${
+      props.accent === 'secondary'
+        ? props.theme.color.white.ctaproof
+        : props.theme.color.primary
+    }`};
+`;
