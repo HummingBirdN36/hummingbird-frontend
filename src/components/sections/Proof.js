@@ -14,7 +14,7 @@ var settings = {
   dots: false,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 3500,
+  autoplaySpeed: 2500,
 };
 
 const LinkStyle = styled.a`
@@ -98,12 +98,12 @@ const Proof = () => (
               </p>
 
               <div id="sociallabel">
-                <div id="socialimage">
+                {/* <div id="socialimage">
                   <img
                     id="quoteimage"
-                    src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-19/s320x320/34709266_1283807998389296_584650176900104192_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_ohc=zXtHadsiix4AX93vKHG&oh=5849cfb2f463dd26798197a45c8fc760&oe=5F207433"
+                    src="https://instagram.fyto1-2.fna.fbcdn.net/v/t51.2885-19/s320x320/34709266_1283807998389296_584650176900104192_n.jpg?tp=1&_nc_ht=instagram.fyto1-2.fna.fbcdn.net&_nc_ohc=Rem74NeHR3gAX9TnOG7&oh=d4d57cce528aed7f070c0fea900484c7&oe=6070A2B3"
                   />
-                </div>
+                </div> */}
                 <p id="quoteperson"> Niharika, Bay Area, California</p>
               </div>
             </div>
@@ -112,12 +112,12 @@ const Proof = () => (
                 "The selections are so spot on
                 <br /> I could totally see a lot of these items in my home."
                 <div id="sociallabel">
-                  <div id="socialimage">
+                  {/* <div id="socialimage">
                     <img
                       id="quoteimage"
-                      src="https://pbs.twimg.com/profile_images/1183088546414022656/dM8IGj5V_400x400.jpg"
+                      src="https://media-exp1.licdn.com/dms/image/C5603AQHBjHCJtaB6Lg/profile-displayphoto-shrink_400_400/0/1588633764119?e=1620864000&v=beta&t=9tvfJqZt15IO6GquDcTtpd9XYrcOZBPnkQuq8ZSjPak"
                     />
-                  </div>
+                  </div> */}
                   <p id="quoteperson"> Arjun, Toronto, Canada</p>
                 </div>
               </p>
@@ -129,12 +129,12 @@ const Proof = () => (
               </p>
 
               <div id="sociallabel">
-                <div id="socialimage">
+                {/* <div id="socialimage">
                   <img
                     id="quoteimage"
                     src="https://scontent-yyz1-1.cdninstagram.com/v/t51.2885-19/s320x320/70384640_518777428910492_2396060214605381632_n.jpg?_nc_ht=scontent-yyz1-1.cdninstagram.com&_nc_ohc=OeT-CptMLqoAX9TZyVK&oh=e19da61e4ea03e12c010bb4a4eb2eb9f&oe=5F21CF53"
                   />
-                </div>
+                </div> */}
                 <p id="quoteperson"> Aniea, California</p>
               </div>
             </div>

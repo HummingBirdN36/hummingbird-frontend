@@ -18,8 +18,7 @@ import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
 const NAV_ITEMS = [
   'How does it work?',
-  'Brands we shop from',
-  'How much does it cost?',
+  'Brands',
   'FAQ',
 ];
 
@@ -65,7 +64,7 @@ class Navbar extends Component {
     return (
       <Nav {...this.props}>
         <StyledContainer>
-          <Brand>Hummingbird</Brand>
+          <Brand>homeboard</Brand>
           <Mobile>
             <button onClick={this.toggleMobileMenu} style={{ color: 'black' }}>
               <MenuIcon />

@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "dreamer" }
+          name: { eq: "header-3" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -31,16 +31,16 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                Decorate the home
-                <br />
-                you can be proud of.
+                Your free interior decor shopping assistant
               </h1>
-              <br />
+              <h3>
+              Create stylish moodboards. Shop for the perfect product for your space in minutes.
+              </h3>
               <br />
               <CtaButton>
                 <p>
-                  <StyledExternalLink href="https://tolu6.typeform.com/to/CAZzBm">
-                    Take your decor quiz &nbsp;&#x2794;
+                  <StyledExternalLink href="https://tolu6.typeform.com/to/aH2b77V2">
+                    Join the waitlist
                   </StyledExternalLink>
                 </p>
               </CtaButton>

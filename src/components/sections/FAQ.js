@@ -17,13 +17,12 @@ const LinkStyle = styled.a`
 
 const FAQS = [
   {
-    title: 'What is Hummingbird?',
+    title: 'What is Homeboard?',
     content: () => (
       <>
-        Hummingbird is an online interior decor service that delivers a fast and personalized shopping experience for your home.
+        Homeboard is a new way to discover and buy home decor products through intuitive easy  to create moodboards. Imagine Pinterest and Tinder had a baby.
         <br/> <br/>
-        To use Hummingbird, fill out a <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank"> Decor Profile </LinkStyle> and we will handpick pieces to fit your tastes, needs and budget. Then we send
-        an itemized list, summary and links to purchase the items right to you.
+        We're not live yet, but we will be soon! If the idea of a free moodboard sounds good to you,<LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank"> <b>join the waitlist!</b> </LinkStyle> 
       </>
     ),
   },
@@ -31,28 +30,7 @@ const FAQS = [
     title: 'How does it work?',
     content: () => (
       <>
-       1. Fill out a Decor Profile
-       <br/>
-       <br/>
-        First, you’ll need to complete a <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank">Decor Profile </LinkStyle>. This information will help us understand the items, configurations and styles you’re looking for, as well as your ideal price range. Completing a profile takes about 5-10 minutes. 
-        <br/>
-       <br/>
-        2. Review the items you're sent
-       <br/>
-       <br/>
-        We'll send over an itemized list (with links where to buy them) of 3-5 items in each category you've selected. We'll revise the list up to 2 times at no extra cost to you.
-        <br/>
-        <br/>
-        3. Buy what you like
-       <br/>
-       <br/>
-        From the list, buy and ship the items you want to your home. 
-        <br/>
-        <br/>
-        4. Tell us what you think!
-       <br/>
-       <br/>
-        Remember to give us feedback on the items you bought. Telling us what you liked, didn’t like and why helps us know how best to serve you in the future.
+      Its crazy simple! First you <LinkStyle href="https://tolu6.typeform.com/to/CAZzBm" target="_blank"> <b>join the waitlist!</b> </LinkStyle> Then when we're live you can create beautiful moodbaords, swipe on real products from real retailers and see all the best reviews. That's it.
 
       </>
     ),
@@ -61,20 +39,17 @@ const FAQS = [
     title: 'Why is it better?',
     content: () => (
       <>
-       The Hummingbird experience is not just curated, it’s truly personalized to your taste, budget and lifestyle. 
+       The Homeboard experience is not just curated, it’s truly personalized to your taste, budget and lifestyle. 
       <br/>
       <br/>
-      We offer decorating for any part of your home and handpick items just for you.
+      We offer products from retailers all across the internet for any part of your home.
       <br/>
       <br/>
-      Hummingbird makes shopping for your home not just convenient, but effortless. We save you the headache of opening multiple tabs to price compare, multiple trips to the store or the lingering feeling that you are missing something better. 
-      
+      Homeboard makes shopping for your home not just convenient, but effortless. We save you the headache of opening multiple tabs to price compare, multiple trips to the store or the lingering feeling that you are missing something better. 
       <br/>
       <br/>
       We reduce the complex decision of choosing what goes in your home to just a few great selections, all while saving you the time and money. 
       <br/>
-      <br/>
-      We don't ship items for you just yet, but you bet we're working on it!
       </>
     ),
   },
@@ -82,15 +57,7 @@ const FAQS = [
     title: 'How much does it cost?',
     content: () => (
       <>
-        Its only $19.99!
-      </>
-    ),
-  },
-  {
-    title: 'What homes can you style?',
-    content: () => (
-      <>
-        We can style most suburban homes and the spaces within them. But with a bit more time we can find the perfect pieces for your special home.
+        Its a free app duh!
       </>
     ),
   },

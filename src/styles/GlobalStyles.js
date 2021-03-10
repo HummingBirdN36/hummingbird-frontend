@@ -11,13 +11,17 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.font.custombold};
   }
 
-  h1, h2, h3, p {
+ h2, h3, p {
     margin: 0;
     font-weight: normal;
   }
 
-  h1, h2 {
+ h2 {
     font-family: ${(props) => props.theme.font.custom};
+  }
+
+  h1 {
+    font-family: ${(props) => props.theme.font.custombold};
   }
 
   h1 {
@@ -41,7 +45,7 @@ const GlobalStyles = createGlobalStyle`
 
   @media (max-width: ${(props) => props.theme.screen.sm}) {
     h1 {
-      ${(props) => props.theme.font_size.larger};
+      ${(props) => props.theme.font_size.xlarge};
     }
 
     h2 {

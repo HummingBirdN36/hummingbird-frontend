@@ -56,7 +56,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Hummingbird</h2>
+              <h2>Homeboard</h2>
               <br />
               <span style={footerText}>
                 Illustrations by

@@ -62,19 +62,19 @@ const UsedBy = () => (
       }
     `}
     render={(data) => (
-      <Section id="brands we shop from" accent>
+      <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Top quality, guaranteed</h1>
+            <h1>Swipe and shop on the best home decor brands</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink href={link}>{logo()}</ExternalLink>
               ))}
             </LogoGrid>
           </div>
-          <Art>
+          {/* <Art>
             <Img fluid={data.art_story.childImageSharp.fluid} />
-          </Art>
+          </Art> */}
         </StyledContainer>
       </Section>
     )}

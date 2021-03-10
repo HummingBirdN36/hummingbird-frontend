@@ -59,7 +59,7 @@ const About = () => (
           <h2>How does it work?</h2>
           <Grid>
             <div>
-              <h3>1. Tell us your decor goals</h3>
+              <h3>1. Create a decor profile</h3>
               <p>
                 Fill out a{" "}
                 <LinkStyle
@@ -81,7 +81,7 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h3>2. Get hand-selected pieces</h3>
+              <h3>2. Create a moodboard</h3>
               <p>
                 Choose from 3-5 hand-selected home decor pieces in each category
                 you request. Get up 2 revisions. <br />
@@ -92,7 +92,7 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h3>3. Ship it to your home</h3>
+              <h3>3. Swipe and Shop</h3>
               <p>
                 Get an itemised list, summary and links to the items you have
                 selected. Buy and ship them to your home.
@@ -102,7 +102,7 @@ const About = () => (
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
           </Grid>
-          <h2>Hummingbird is fast in every way that matters.</h2>
+          <h2>Homeboard is fast in every way that matters.</h2>
         </Container>
       </Section>
     )}
