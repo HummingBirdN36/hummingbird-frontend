@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Hummingbird`,
-        short_name: `hummingbird`,
+        name: `Homeboard`,
+        short_name: `homeboard`,
         start_url: `/`,
         background_color: `#8bd8ed`,
         theme_color: `#8bd8ed`,
@@ -44,7 +44,7 @@ module.exports = {
       options: {
         custom: {
           families: [
-            'Kollektif,Kollektif-Bold,Kollektif-BoldItalic, Kollektif-Italic',
+            'Kollektif,Kollektif-Bold,Kollektif-BoldItalic, Kollektif-Italic', 'Atami','Atami-Bold'
           ],
           urls: ['/fonts/fonts.css'],
         },

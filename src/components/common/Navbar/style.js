@@ -63,7 +63,8 @@ export const MobileMenu = styled.div`
 `;
 
 export const Brand = styled.div`
-  font-family: ${(props) => props.theme.font.secondary};
+  font-family: ${(props) => props.theme.font.logobold};
+  color: ${(props) => props.theme.color.white.ctaproof};
   ${(props) => props.theme.font_size.xlarge};
 `;
 

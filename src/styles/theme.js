@@ -6,6 +6,8 @@ const theme = {
     custombold: `'Kollektif-Bold',sans-serif`,
     custombolditalic: `'Kollektif-BoldItalic',sans-serif`,
     customitalic: `'Kollektif-Italic',sans-serif`,
+    logo: `'Atami', sans-serif`,
+    logobold:`Atami-Bold, sans-serif`,
   },
   font_size: {
     small: 'font-size: 20px; line-height: 30px',

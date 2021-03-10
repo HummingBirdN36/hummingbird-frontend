@@ -17,3 +17,13 @@
   font-family: 'Kollektif';
   src: url('Kollektif.ttf');
 }
+
+@font-face {
+  font-family: 'Atami';
+  src: url('Atami-Regular.otf');
+}
+
+@font-face{
+  font-family: 'Atami-Bold';
+  src: url('Atami-Bold.otf');
+}
