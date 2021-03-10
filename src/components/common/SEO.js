@@ -3,7 +3,7 @@ import Helmet from "react-helmet";
 
 const SEO_DATA = {
   description:
-    "Swipe, shop and create moodboards with products from retailers all across the internet.s",
+    "Swipe, shop and create moodboards with real products from retailers all across the internet.",
   title: "Homeboard",
   url: "https://www.yourhomeboard.com/",
   author: "toluolubode",
