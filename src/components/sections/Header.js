@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "header-4" }
+          name: { eq: "header-5" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -96,7 +96,7 @@ const Art = styled.figure`
   margin: 0;
 
   > div {
-    width: 120%;
+    width: 150%;
     margin-bottom: -4.5%;
 
     @media (max-width: ${props => props.theme.screen.md}) {
@@ -112,7 +112,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 120px;
+  grid-gap: 170px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
