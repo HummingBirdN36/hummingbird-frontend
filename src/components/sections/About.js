@@ -59,17 +59,9 @@ const About = () => (
           <h2>How does it work?</h2>
           <Grid>
             <div>
-              <h3>1. Create a decor profile</h3>
+              <h3>1. Tell us about yourself</h3>
               <p>
-                Fill out a{" "}
-                <LinkStyle
-                  href="https://tolu6.typeform.com/to/CAZzBm"
-                  target="_blank"
-                >
-                  Decor Profile
-                </LinkStyle>
-                . Share your home style, tastes and price preferences with your
-                personal decorator.
+                Share your home style, tastes and price preferences with the app
               </p>
             </div>
             <Art>
@@ -83,10 +75,7 @@ const About = () => (
             <div>
               <h3>2. Create a moodboard</h3>
               <p>
-                Choose from 3-5 hand-selected home decor pieces in each category
-                you request. Get up 2 revisions. <br />
-                <br />
-                We get you to exactly what you'll like.
+                Ever wondered what a Bridgerton inspired space could look like and what products you'd need to make it happen?
               </p>
             </div>
           </Grid>
@@ -94,15 +83,14 @@ const About = () => (
             <div>
               <h3>3. Swipe and Shop</h3>
               <p>
-                Get an itemised list, summary and links to the items you have
-                selected. Buy and ship them to your home.
+                Swipe on items to add them to your moodboard, buy them later or track discounts
               </p>
             </div>
             <Art>
               <Img fluid={data.art_ideas.childImageSharp.fluid} />
             </Art>
           </Grid>
-          <h2>Homeboard is fast in every way that matters.</h2>
+          <h2>Give your home the boost you deserve</h2>
         </Container>
       </Section>
     )}
