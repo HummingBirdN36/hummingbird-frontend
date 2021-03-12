@@ -34,7 +34,7 @@ const Header = () => (
                 Your free interior decor shopping assistant
               </h1>
               <h3>
-              Create stylish moodboards. Shop for the perfect product for your space in minutes.
+              Create stylish moodboards in one click and shop for home decor pieces in minutes.
               </h3>
               <br />
               <CtaButton>
