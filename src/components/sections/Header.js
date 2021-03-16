@@ -39,7 +39,7 @@ const Header = () => (
               <br />
               <CtaButton>
                 <p>
-                  <StyledExternalLink href="https://tolu6.typeform.com/to/aH2b77V2">
+                  <StyledExternalLink href="https://tolu6.typeform.com/to/rq1KcGjE">
                     Join the waitlist
                   </StyledExternalLink>
                 </p>
