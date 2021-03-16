@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 const SEO_DATA = {
   description:
     "Swipe, shop and create moodboards with real products from retailers all across the internet.",
-  title: "Homeboard | Create A Free Home Decor Moodboard",
+  title: "Homeboard | Swipe,Shop,Be inspired",
   url: "https://www.yourhomeboard.com/",
   author: "toluolubode",
   keywords: ["gatsby", "site", "homeboard"],
