@@ -65,7 +65,7 @@ const FAQS = [
     title:'I have questions about Homeboard,who can I contact?',
     content: () => (
       <>
-      If you've got questions feel free to direct them to tolu@homeboard.com      </>
+      If you've got questions feel free to direct them to tolu@yourhomeboard.com      </>
     ),
   }
 ];
