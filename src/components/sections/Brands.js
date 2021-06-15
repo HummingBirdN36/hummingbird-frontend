@@ -1,43 +1,43 @@
-import React from "react";
-import styled from "styled-components";
-import { StaticQuery, graphql } from "gatsby";
-import Img from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-import { Section, Container } from "@components/global";
-import ExternalLink from "@common/ExternalLink";
+import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
-import { ReactComponent as PotteryBarnLogo } from "@static/logos/potterybarn.svg";
-import { ReactComponent as WayfairLogo } from "@static/logos/wayfair.svg";
-import { ReactComponent as BouclairLogo } from "@static/logos/bouclair.svg";
-import { ReactComponent as CrateBarrelLogo } from "@static/logos/cratebarrel.svg";
-import { ReactComponent as UrbanBarnLogo } from "@static/logos/urbanbarn.svg";
-import { ReactComponent as AnthropologieLogo } from "@static/logos/anthropologie.svg";
-import { ReactComponent as BBBeyondLogo } from "@static/logos/bbbeyond.svg";
+import { ReactComponent as PotteryBarnLogo } from '@static/logos/potterybarn.svg';
+import { ReactComponent as WayfairLogo } from '@static/logos/wayfair.svg';
+import { ReactComponent as BouclairLogo } from '@static/logos/bouclair.svg';
+import { ReactComponent as CrateBarrelLogo } from '@static/logos/cratebarrel.svg';
+import { ReactComponent as UrbanBarnLogo } from '@static/logos/urbanbarn.svg';
+import { ReactComponent as AnthropologieLogo } from '@static/logos/anthropologie.svg';
+import { ReactComponent as BBBeyondLogo } from '@static/logos/bbbeyond.svg';
 
 const LOGOS = [
   {
     logo: CrateBarrelLogo,
-    link: "https://www.crateandbarrel.com/",
+    link: 'https://www.crateandbarrel.com/',
   },
   {
     logo: PotteryBarnLogo,
-    link: "http://www.potterybarn.ca/",
+    link: 'http://www.potterybarn.ca/',
   },
   {
     logo: WayfairLogo,
-    link: "https://www.wayfair.ca/",
+    link: 'https://www.wayfair.ca/',
   },
   {
     logo: BouclairLogo,
-    link: "https://www.bouclair.com/en/",
+    link: 'https://www.bouclair.com/en/',
   },
   {
     logo: UrbanBarnLogo,
-    link: "https://www.urbanbarn.com/",
+    link: 'https://www.urbanbarn.com/',
   },
   {
     logo: AnthropologieLogo,
-    link: "https://www.anthropologie.com/new-home",
+    link: 'https://www.anthropologie.com/new-home',
   },
   // {
   //   logo: BBBeyondLogo,
@@ -61,11 +61,13 @@ const UsedBy = () => (
         }
       }
     `}
-    render={(data) => (
+    render={data => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Swipe and shop on the best home decor brands</h1>
+            <h1 style={{ textAlign: 'center' }}>
+              Shop the best products from the best brands
+            </h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink href={link}>{logo()}</ExternalLink>
@@ -94,7 +96,7 @@ const LogoGrid = styled.div`
     }
   }
 
-  @media (max-width: ${(props) => props.theme.screen.sm}) {
+  @media (max-width: ${props => props.theme.screen.sm}) {
     grid-template-columns: 1fr;
   }
 `;
@@ -104,7 +106,7 @@ const StyledContainer = styled(Container)`
   justify-content: flex-end;
   position: relative;
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     justify-content: center;
   }
 `;
@@ -115,13 +117,13 @@ const Art = styled.figure`
   top: -12%;
   right: 50%;
 
-  @media (max-width: ${(props) => props.theme.screen.lg}) {
+  @media (max-width: ${props => props.theme.screen.lg}) {
     top: 0;
     right: 65%;
     width: 500px;
   }
 
-  @media (max-width: ${(props) => props.theme.screen.md}) {
+  @media (max-width: ${props => props.theme.screen.md}) {
     display: none;
   }
 `;

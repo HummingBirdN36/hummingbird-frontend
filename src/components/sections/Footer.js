@@ -56,23 +56,23 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Homeboard</h2>
-              <br />
-              <span style={footerText}>
+              {/* <h2>Homeboard 2021</h2>
+              <br /> */}
+              {/* <span style={footerText}>
                 Illustrations by
                 {` `}
                 <ExternalLink href="https://blush.design/artists/pablo-stanley">
                   Pablo Stanley @ Blush Designs
                 </ExternalLink>
-              </span>
-              <br />
+              </span> */}
+              {/* <br />
               <span style={footerText}>
                 Project by Tolu Olubode
                 {` `}
                 <ExternalLink href="https://twitter.com/txluuu">
                   @txluuu
                 </ExternalLink>
-              </span>
+              </span> */}
             </Copyright>
           </StyledContainer>
         </FooterWrapper>

@@ -12,7 +12,7 @@ const Header = () => (
       query {
         art_build: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "header-5" }
+          name: { eq: "headerpic" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1400) {
@@ -26,25 +26,24 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
-            </Art>
             <Text>
-              <h1>
-                Your free interior decor shopping assistant
-              </h1>
-              <h3>
-              Create stylish moodboards in one click and shop for home decor pieces in minutes.
+              <h1>Decorate your living room in just a few clicks</h1>
+              <h3 className="caption">
+                Decorating your space shouldn’t be exhausting. With Homeboard,
+                you can effortlessly design your space in days not weeks.
               </h3>
               <br />
               <CtaButton>
                 <p>
                   <StyledExternalLink href="https://tolu6.typeform.com/to/rq1KcGjE">
-                    Join the waitlist
+                    Start decorating
                   </StyledExternalLink>
                 </p>
               </CtaButton>
             </Text>
+            <Art>
+              <Img fluid={data.art_build.childImageSharp.fluid} />
+            </Art>
           </Grid>
         </Container>
       </HeaderWrapper>
@@ -135,6 +134,8 @@ const Text = styled.div`
 const StyledExternalLink = styled(ExternalLink)`
   color: white;
   text-decoration: none;
+  font-size:16px;
+  font-family: ;
 
   // &:hover {
   //   color: ${props => props.theme.color.black.regular};

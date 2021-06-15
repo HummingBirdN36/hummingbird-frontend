@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-import { Section2, Container } from '@components/global';
+import { Section2, Container, SocialContainer } from '@components/global';
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -67,7 +67,7 @@ const Proof = () => (
     `}
     render={data => (
       <Section2 id="social proof" accent="secondary">
-        <Container>
+        <SocialContainer>
           <h3>From our customers</h3>
           <br />
           <br />
@@ -185,7 +185,7 @@ const Proof = () => (
           {/* <br />
           <br />
           <h2>Hummingbird is fast in every way that matters.</h2> */}
-        </Container>
+        </SocialContainer>
       </Section2>
     )}
   />

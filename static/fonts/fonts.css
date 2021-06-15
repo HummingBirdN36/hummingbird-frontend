@@ -23,7 +23,27 @@
   src: url('Atami-Regular.otf');
 }
 
-@font-face{
+@font-face {
   font-family: 'Atami-Bold';
   src: url('Atami-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Silka-Regular';
+  src: url('silka-regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'Silka-Semibold';
+  src: url('silka-semibold-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'SofiaPro-Regular';
+  src: url('sofia_pro_regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'SofiaPro-Semibold';
+  src: url('sofia_pro_semibold-webfont.ttf');
 }
