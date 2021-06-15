@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
 import { Link } from 'gatsby';
-
+import ExternalLink from '@common/ExternalLink';
+import styled from 'styled-components';
 import { Container } from '@components/global';
 import {
   Nav,
@@ -16,11 +17,27 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = [
-  'How does it work?',
-  'Brands',
-  'FAQ',
-];
+const NAV_ITEMS = ['How does it work?', 'Brands'];
+
+const StyledExternalLink = styled(ExternalLink)`
+  margin: 0 0.75em;
+  font-family: ${props => props.theme.font.sofiaproregular};
+  ${props => props.theme.font_size.small};
+
+  a {
+    text-decoration: none;
+    opacity: 0.7;
+    color: #3e5cff;
+  }
+
+  &.active {
+    a {
+      color: #3e5cff;
+      opacity: 1;
+      text-decoration: none;
+    }
+  }
+`;
 
 class Navbar extends Component {
   state = {
@@ -54,6 +71,21 @@ class Navbar extends Component {
         {NAV_ITEMS.map(navItem => (
           <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
         ))}
+        <StyledExternalLink
+          href="https://homeboard.typeform.com/to/otvtCIIE"
+          style={{
+            textDecoration: 'none',
+            color: '#3E5CFF',
+            border: '2px solid #3E5CFF',
+            borderRadius: '7px',
+            paddingTop: '5px',
+            paddingBottom: '5px',
+            paddingLeft: '10px',
+            paddingRight: '10px',
+          }}
+        >
+          Get started
+        </StyledExternalLink>
       </Scrollspy>
     </NavListWrapper>
   );

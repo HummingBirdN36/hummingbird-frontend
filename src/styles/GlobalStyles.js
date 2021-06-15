@@ -17,7 +17,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
  h2 {
-    font-family: ${props => props.theme.font.custom};
+    font-family: ${props => props.theme.font.sofiaprosemibold};
   }
 
   h1 {
