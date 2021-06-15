@@ -35,7 +35,7 @@ const Header = () => (
               <br />
               <CtaButton>
                 <p>
-                  <StyledExternalLink href="https://tolu6.typeform.com/to/rq1KcGjE">
+                  <StyledExternalLink href="https://homeboard.typeform.com/to/otvtCIIE">
                     Start decorating
                   </StyledExternalLink>
                 </p>
